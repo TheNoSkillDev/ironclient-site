@@ -5,36 +5,177 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Iron Client</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #1e1e1e;
+      color: #f1f1f1;
+    }
+
+    header {
+      background: linear-gradient(135deg, #2b2b2b, #3a3a3a);
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: 0 auto 20px;
+      color: #ccc;
+    }
+
+    .download-btn {
+      background: #00b894;
+      color: white;
+      padding: 14px 28px;
+      font-size: 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.3s;
+    }
+
+    .download-btn:hover {
+      background: #019875;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    #features ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    #features li::before {
+      content: "✔️";
+      margin-right: 10px;
+      color: #00cec9;
+    }
+
+    #community a {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 18px;
+      color: #74b9ff;
+      text-decoration: none;
+    }
+
+    #community a:hover {
+      text-decoration: underline;
+    }
+
+    .faq-item {
+      margin-bottom: 20px;
+    }
+
+    .faq-item h3 {
+      font-size: 20px;
+      color: #00cec9;
+      margin-bottom: 5px;
+    }
+
+    .faq-item p {
+      font-size: 16px;
+      color: #ddd;
+      margin: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #888;
+      border-top: 1px solid #333;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>Iron Client</h1>
-    <p>Lightweight Minecraft launcher with offline support. We plan to add official auth support in the future.</p>
+    <p>A clean and lightweight Minecraft launcher with offline support and future online account integration.</p>
     <a href="https://github.com/TheNoSkillDev/IronClientInstaller/releases/download/v1.0/IronClientInstaller.exe"
-   class="download-btn"
-   target="_blank"
-   rel="noopener noreferrer"
-   download>
-  Download Now
-</a>
+       class="download-btn"
+       target="_blank"
+       rel="noopener noreferrer"
+       download>
+      ⬇ Download Now
+    </a>
   </header>
 
+  <section id="about">
+    <h2>🧱 About IronClient</h2>
+    <p>IronClient is a lightweight, custom Minecraft launcher made for players who want flexibility, speed, and offline support. Whether you're playing modded Minecraft, testing servers, or just want a no-nonsense launcher, IronClient is designed to be minimal but powerful. Built with the goal of supporting both offline access and official Microsoft account logins (coming soon), it's perfect for both personal use and development environments.</p>
+  </section>
+
   <section id="features">
-    <h2>Features</h2>
+    <h2>⚙️ Features</h2>
     <ul>
-      <li>Offline login support</li>
-      <li>Mod-friendly with Fabric</li>
-      <li>Future official Minecraft account authentication</li>
+      <li>Offline login support for quick access</li>
+      <li>Compatible with Fabric mods</li>
+      <li>Plans for full Microsoft account auth support</li>
+      <li>Lightweight and fast installer (under 10MB)</li>
+      <li>Actively developed with community feedback</li>
     </ul>
   </section>
 
+  <section id="faq">
+    <h2>❓ Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <h3>Does IronClient work without an internet connection?</h3>
+      <p>Yes! IronClient supports full offline login so you can play without needing to connect online.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Can I use mods with IronClient?</h3>
+      <p>Absolutely. IronClient is built to be compatible with Fabric and other modding platforms.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Is IronClient safe to use?</h3>
+      <p>Yes. IronClient is open source and designed with privacy and security in mind. You can review the code on GitHub.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Will Microsoft or Mojang accounts be supported?</h3>
+      <p>That’s the plan! We’re working toward adding official Microsoft authentication support in future updates.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How often is IronClient updated?</h3>
+      <p>IronClient is actively maintained. Join our Discord to get updates, changelogs, and share feedback.</p>
+    </div>
+
+  </section>
+
   <section id="community">
-    <h2>Join the Community</h2>
-    <a href="https://discord.gg/zhKUvYun" target="_blank" rel="noopener noreferrer">Join our Discord</a>
+    <h2>🌐 Join the Community</h2>
+    <p>Have questions or want to contribute? Connect with us:</p>
+    <a href="https://discord.gg/zhKUvYun" target="_blank" rel="noopener noreferrer">💬 Join our Discord</a>
   </section>
 
   <footer>
-    <p>© 2025 Iron Client by TheNoSkillDev</p>
+    <p>© 2025 Iron Client • Built by TheNoSkillDev</p>
   </footer>
 </body>
 </html>
